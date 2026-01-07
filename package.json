@@ -1,0 +1,41 @@
+{
+  "name": "barnowl-cassia",
+  "homepage": "https://github.com/reelyactive/barnowl-cassia/",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
+  "description": "Collect ambient advertising packets and exchange data with paired BLE devices using Cassia Networks gateways.  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "barnowl",
+    "Cassia Networks",
+    "raddec"
+  ],
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=10.19.0"
+  },
+  "main": "./lib/barnowlcassia.js",
+  "scripts": {
+    "start": "node bin/barnowl-cassia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/barnowl-cassia.git"
+  },
+  "dependencies": {
+    "advlib-identifier": ">=0.1.0",
+    "eventsource": "^2.0.2",
+    "raddec": ">=0.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/reelyactive/barnowl-cassia/issues"
+  },
+  "contributors": [
+    {
+      "name": "Jeffrey Dungen"
+    }
+  ],
+  "license": "MIT"
+}

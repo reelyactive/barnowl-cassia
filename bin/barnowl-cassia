@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const BarnowlCassia = require('../lib/barnowlcassia.js');
+
+let barnowl = new BarnowlCassia();
+
+barnowl.addListener(BarnowlCassia.SseListener,
+                    { baseUrl: "http://10.10.10.254" });
+
+barnowl.on('raddec', (raddec) => {
+  console.log(raddec.toFlattened());
+});
